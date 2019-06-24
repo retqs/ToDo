@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ilkjl</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="display mt-4 text-center">
+			<h1><i class="fas fa-book-open text-primary"></i><span class="text-primary">Book</span> list </h1>
+			
+			<form id="book-form">
+				<div class="form-group">
+					<label for="title">Title</label>
+					<input id="title" type="text" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="author">Author</label>
+					<input id="author" type="text" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="isbn">ISBN nubmer</label>
+					<input id="isbn" type="text" class="form-control">
+				</div>
+				<input type="submit" value="Add book" class="btn btn-primary btn-block">
+			</form>
+			<table class="table table-striped mt-5">
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Author</th>
+						<th>ISBN</th>
+						<th></th>
+						<tbody id="book-list">
+							
+						</tbody>
+					</tr>
+				</thead>
+			</table>
+		</div>	
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
